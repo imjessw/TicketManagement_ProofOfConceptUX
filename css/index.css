@@ -1,0 +1,17 @@
+body{
+	padding: 50px;
+}
+
+#Footer{
+	position: static;
+	bottom: 0;
+}
+.accordion{
+	background-color: #89cff0;
+	margin-top: 40px;
+}
+.accordion-title{
+	color: white;
+	font-weight: bold;
+	font-size: 14px;
+}

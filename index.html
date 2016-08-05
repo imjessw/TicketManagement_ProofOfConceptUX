@@ -1,0 +1,294 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Future TSM</title>
+		<link rel="stylesheet" href="css/foundation.css">
+		<link rel="stylesheet" href="css/foundation-datepicker.css">
+		<link rel="stylesheet" href="css/foundation-datepicker.css">
+		<link rel="stylesheet" href="css/app.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<h1>Creative Services Tickets</h1>
+
+		<div>
+			<div class="expanded row">
+				<label>What kind of ad do you want to create?</label>
+				<input id="checkbox1" type="checkbox"><label for="checkbox1">Facebook</label>
+				<input id="checkbox2" type="checkbox"><label for="checkbox2">Banner Ad</label>
+				<input id="checkbox1" type="checkbox"><label for="checkbox1">Listen Live 2.0 Sponsorship</label>
+				<!-- <input id="checkbox2" type="checkbox"><label for="checkbox2">Ad 4</label> -->
+			</div>
+		</div>
+
+		<!-- Top of all tickets -->
+
+		<form>
+			<label>
+				Market *
+				<input class="large-6" type="text" placeholder="Market" aria-describedby="exampleHelpText">
+			</label>
+			<p class="help-text" id="exampleHelpText">Please enter Market</p>
+			<label>
+				AE email *
+				<input class="large-6" type="text">
+			</label>
+			<label>
+				DSM email
+				<input class="large-6" type="text">
+			</label>
+			<label>
+				Is there anyone else you would like to notify with this ticket?
+				<input class="large-6" type="text">
+			</label>
+			<label>
+				Advertiser*
+				<input class="large-6" type="text">
+			</label>
+			<label>
+				 Is this part of a larger buy? *
+				 <br>
+				<input type="radio" name="pokemon" required><label>Yes</label>
+				<input type="radio" id="pokemonBlue"><label>No</label>
+			</label>
+		</form>
+
+
+<!--     Forms -->
+		<!-- Facebook -->
+		<ul class="accordion" data-accordion>
+			<li class="accordion-item is-active" data-accordion-item>
+				<a href="#" class="accordion-title">Facebook</a>
+				<div class="accordion-content" data-tab-content>
+					<label>Advertiser Facebook Page URL*
+						<input type="text" aria-describedby="exampleHelpText" required>
+						<p class="help-text" id="exampleHelpText">Please provide the full URL. </p>
+					</label>
+
+									
+
+					<!-- Add to all tickets -->
+
+					<div class="AddToAllTickets">
+						<label>Station(s)*
+							<input type="text" aria-describedby="exampleHelpText" required>
+							<p class="help-text" id="exampleHelpText">Please use call signs </p>
+						</label>
+						<label>
+							Flight Start Date*
+							<div class="collapse date" id="dpd1" style="max-width:200px;">
+							<div class="small-2 columns">	
+								<span class="prefix"><i class="fa fa-calendar"></i></span>
+							</div>
+							<div class="small-10 columns">
+								<input size="16" type="text" readonly>	
+							</div>
+						</div>
+						</label>
+						<label>
+							Flight End Date*
+							<div class="collapse date" id="dpd1" style="max-width:200px;">
+							<div class="small-2 columns">	
+								<span class="prefix"><i class="fa fa-calendar"></i></span>
+							</div>
+							<div class="small-10 columns">
+								<input size="16" type="text"  readonly>	
+							</div>
+							</div>
+						</label>
+						<label>
+							Please add any additional flight dates:
+							<textarea></textarea>
+						</label>
+						<label>
+							Any Additonal Traffic Information
+							<textarea></textarea>
+						</label>
+						<label>Please upload your logo</label>
+						<label for="exampleFileUpload" class="button">Upload Logo</label>
+						<input type="file" id="exampleFileUpload" class="show-for-sr">
+
+						<label>Total Revenue*
+							<input type="text" aria-describedby="exampleHelpText" required pattern="number">
+							<p class="help-text" id="exampleHelpText"></p>
+						</label>
+						<label>
+							Any Additonal Creative Information
+							<textarea></textarea>
+						</label>
+						
+					</div>
+					
+				</div>
+			</li>
+
+			<!-- Banner Ad -->
+
+			<li class="accordion-item" data-accordion-item>
+				<a href="#" class="accordion-title">Banner Ad</a>
+					<div class="accordion-content" data-tab-content>
+					<label>Number Required
+					<input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
+					<span class="form-error">
+					Yo, you had better fill this out, it's required.
+					</span>
+					</label>
+					<p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+				</div>
+			</li>
+
+			<!-- Listen Live 2.0 Sponsorship -->
+
+			<li class="accordion-item" data-accordion-item>
+				<a href="#" class="accordion-title">Listen Live 2.0 Sponsorship</a>
+				<div class="accordion-content" data-tab-content>
+					<div class="medium-6">
+						<label>What is the click through URL?
+							<input type="text" placeholder="Please enter full URL" pattern="url">
+						</label>
+					</div>
+					<h6>Player Skin (Section)</h6>
+					<hr>
+					<div>
+						<fieldset class="large-6 Ad_Logo_Opt">
+						<legend>Does your Advertiser have a logo or do they need one created?</legend>
+							<input type="radio"  id="pokemonRed" required><label for="pokemonRed">They have a logo.</label>
+							<!-- <h1 class="LogoSelected">Logo Selected</h1> -->
+							<input type="radio"  id="pokemonBlue"><label for="pokemonBlue">This Advertiser needs a logo created.</label>
+							<!-- <h1 class="LogoSelected">Logo Needed</h1> -->
+						</fieldset>
+						<label>Where should we find images for creative?*
+						    <select>
+						      <option value="husker">Upload Images</option>
+						      <!-- Add show hide -->
+						      <option value="starbuck">Use Stock Photos</option>
+						      <!-- Add show hide -->
+						      <option value="hotdog">Client Website</option>
+						      <!-- Add show hide -->
+						    </select>
+						 </label>
+					</div>
+					<div>
+						<h6>Default Banner AD 300x250 (Section)</h6>
+						<hr>
+						<label>Do you have a banner or do you need one created? *
+						    <select>
+						      <option ></option>
+						      <option value="husker1">I Need a 300x250 banner created by Creative Services.</option>
+						      <!-- Add show hide -->
+						      <option value="starbuck1">I have a 300x250 banner already created.</option>
+						      <!-- Add show hide -->
+						    </select>
+						 </label>
+						<!--  <label>What is the click through URL?*
+							<input type="text" aria-describedby="exampleHelpText" required>
+							<p class="help-text" id="exampleHelpText">Please provide the full URL. </p>
+						</label> -->
+					</div>
+					<hr>
+					<div class="AddToAllTickets">
+						<label>Station(s)*
+							<input type="text" aria-describedby="exampleHelpText" required>
+							<p class="help-text" id="exampleHelpText">Please use call signs </p>
+						</label>
+						<label>
+							Flight Start Date*
+							<div class="collapse date" id="dpd1" style="max-width:200px;">
+							<div class="small-2 columns">	
+								<span class="prefix"><i class="fa fa-calendar"></i></span>
+							</div>
+							<div class="small-10 columns">
+								<input size="16" type="text" readonly>	
+							</div>
+						</div>
+						</label>
+						<label>
+							Flight End Date*
+							<div class="collapse date" id="dpd1" style="max-width:200px;">
+							<div class="small-2 columns">	
+								<span class="prefix"><i class="fa fa-calendar"></i></span>
+							</div>
+							<div class="small-10 columns">
+								<input size="16" type="text"  readonly>	
+							</div>
+							</div>
+						</label>
+
+						<label>
+							Any Additonal Traffic Information
+							<textarea></textarea>
+						</label>
+						<label>Please upload your logo</label>
+						<label for="exampleFileUpload" class="button">Upload Logo</label>
+						<input type="file" id="exampleFileUpload" class="show-for-sr">
+
+						<label>Total Revenue*
+							<input type="text" aria-describedby="exampleHelpText" required pattern="number">
+							<p class="help-text" id="exampleHelpText"></p>
+						</label>
+						<label>
+							Any Additonal Creative Information
+							<textarea></textarea>
+						</label>
+						
+					</div>
+					
+				</div>
+			</li>  
+
+
+
+
+
+
+
+		<!-- 	New Ad -->
+
+<!-- 
+			<li class="accordion-item" data-accordion-item>
+				<a href="#" class="accordion-title">Ad 4</a>
+					<div class="accordion-content" data-tab-content>
+					<label>Number Required
+					<input type="text" placeholder="1234" aria-describedby="exampleHelpText" required pattern="number">
+					<span class="form-error">
+					Yo, you had better fill this out, it's required.
+					</span>
+					</label>
+					<p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+				</div>
+
+			</li> -->
+
+
+
+
+		</ul>
+		<div id="Footer">
+			<div class="large-10 column">
+				<div class="warning progress">
+					<div class="progress-meter" style="width: 50%">
+						<p class="progress-meter-text">50%</p>
+					</div>
+				</div>
+			</div>
+			<div class=" large-2 column">
+				<button type="button" class="button">Save</button>
+				<button type="button" class="success button">Submit</button>
+			</div>
+			
+		</div>
+		
+
+
+
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/vendor/what-input.js"></script>
+		<script src="js/vendor/foundation.js"></script>
+		<script src="js/app.js"></script>
+		<script src="js/foundation-datepicker.js"></script>
+		<script src="js/index.js"></script>
+	</body>
+</html>
