@@ -5,9 +5,8 @@
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Future TSM</title>
-		<link rel="stylesheet" href="css/foundation.css">
-		<link rel="stylesheet" href="css/foundation-datepicker.css">
-		<link rel="stylesheet" href="css/foundation-datepicker.css">
+		<link rel="stylesheet" href="css/foundation.min.css">
+		<link rel="stylesheet" href="css/foundation-datepicker.css"
 		<link rel="stylesheet" href="css/app.css">
 		<link rel="stylesheet" href="css/index.css">
 	</head>
@@ -25,36 +24,70 @@
 		</div>
 
 		<!-- Top of all tickets -->
-
-		<form>
-			<label>
-				Market *
-				<input class="large-6" type="text" placeholder="Market" aria-describedby="exampleHelpText">
-			</label>
-			<p class="help-text" id="exampleHelpText">Please enter Market</p>
-			<label>
-				AE email *
-				<input class="large-6" type="text">
-			</label>
-			<label>
-				DSM email
-				<input class="large-6" type="text">
-			</label>
-			<label>
-				Is there anyone else you would like to notify with this ticket?
-				<input class="large-6" type="text">
-			</label>
-			<label>
-				Advertiser*
-				<input class="large-6" type="text">
-			</label>
-			<label>
-				 Is this part of a larger buy? *
-				 <br>
-				<input type="radio" name="pokemon" required><label>Yes</label>
-				<input type="radio" id="pokemonBlue"><label>No</label>
-			</label>
-		</form>
+		<div class="row expanded">
+			<div class="column float-left large-6">
+				<form>
+					<label>
+						Market *
+						<input class="large-10" type="text" placeholder="Market" aria-describedby="exampleHelpText">
+					</label>
+					<p class="help-text" id="exampleHelpText">Please enter Market</p>
+					<label>
+						AE email *
+						<input class="large-10" type="text">
+					</label>
+					<label>
+						DSM email
+						<input class="large-10" type="text">
+					</label>
+					<label>
+						Is there anyone else you would like to notify with this ticket?
+						<input class="large-10" type="text">
+					</label>
+					<label>
+						Advertiser*
+						<input class="large-10" type="text">
+					</label>
+					<label>
+						 Is this part of a larger buy? *
+						 <br>
+						<input type="radio" name="pokemon" required><label>Yes</label>
+						<input type="radio" id="pokemonBlue"><label>No</label>
+					</label>
+				</form>
+			</div>
+			<div class="column float-right large-6">
+				<button class="button large-3" type="button" data-toggle="example-dropdown"> Design Notes</button>
+				<div class="dropdown-pane large-5" id="example-dropdown" data-dropdown>
+				  <h3>Design Notes</h3>
+				  <ul>
+				  	<li>There will be close to 22 types of ads on this page that will all have check box's under 'what ad would you like to create'</li>
+				  </ul>
+				</div>
+				<button class="button large-3" type="button" data-toggle="example-dropdown2"> General Notes</button>
+				<div class="dropdown-pane large-5" id="example-dropdown2" data-dropdown>
+				  <h3>General Notes</h3>
+				  <p>Everything before the toggle forms are required in Creative Services Tickets</p>	 
+				</div>
+				<button class="button large-3" type="button" data-toggle="example-dropdown3"> Dev Notes</button>
+				<div class="dropdown-pane large-5" id="example-dropdown3" data-dropdown>
+				  <h3>Dev Notes</h3>
+				  <h6>Required fields</h6>
+				  <ul>
+				  	<li>Market</li>
+				  	<li>AE Email</li>
+				  	<li>Advertiser</li>
+				  	<li>Is this part of a larger buy?</li>
+				  </ul>
+				  <h6>Prepopulated Fields</h6>
+				  <ul>
+				  	<li>Market - should be current user's market but editable.</li>
+				  	<li>AE Email- Should populate with the current logged in user but remain editable. Note we will still want to have user tracking on the person logged in even if they are using another AE email.</li>
+				  	
+				  </ul>
+				</div>
+			</div>
+		</div>
 
 
 <!--     Forms -->
@@ -209,7 +242,7 @@
 							Flight End Date*
 							<div class="collapse date" id="dpd1" style="max-width:200px;">
 							<div class="small-2 columns">	
-								<span class="prefix"><i class="fa fa-calendar"></i></span>
+								<span class="prefix"><i class="fi-calendar"></i></span>
 							</div>
 							<div class="small-10 columns">
 								<input size="16" type="text"  readonly>	
