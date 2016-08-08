@@ -19,3 +19,14 @@ body{
 .size-24 { 
 	font-size: 24px; 
 }
+.ChooseTicket-Group .chooseTicket{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 150px;
+}
+
+.chooseTicket{
+	width: 200px;
+	height: 200px;
+	font-size: 20px;
+}
