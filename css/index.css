@@ -1,5 +1,8 @@
 body{
-	padding: 50px;
+	padding: 0px;
+}
+h1{
+	padding-top: 15px;
 }
 
 #Footer{
@@ -29,4 +32,7 @@ body{
 	width: 200px;
 	height: 200px;
 	font-size: 20px;
+}
+.padding50{
+	padding: 50px;
 }
