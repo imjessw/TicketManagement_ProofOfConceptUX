@@ -5,6 +5,31 @@ $(function() {
 		alert( "Are you sure you want to save this? None of the ticket will be processed until you finalize and submit. " );
 	});
 
+	// $(".saveTicketBTN").click(function () {
+	// 		var msg = 'Confirmation Msg.';
+	// 		var div = $("<div>" + msg + "</div>");
+	// 		div.dialog({
+	// 			title: "Confirm",
+	// 			buttons: [
+	// 						{
+	// 							text: "Yes",
+	// 							click: function () {
+	// 								//add ur stuffs here
+	// 							}
+	// 						},
+	// 						{
+	// 							text: "No",
+	// 							click: function () {
+	// 								div.dialog("close");
+	// 							}
+	// 						}
+	// 					]
+	// 		});
+	// 	});
+
+
+
+
 	var nowTemp = new Date();
 	var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
 	var checkin = $('#dpd1').fdatepicker({
