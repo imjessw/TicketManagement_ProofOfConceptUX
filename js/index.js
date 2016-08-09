@@ -1,7 +1,11 @@
-$( document ).ready(function() {
-    console.log( "ready!" );
+$(function() {
+	console.log( "ready!" );
 
-    var nowTemp = new Date();
+	$(".saveTicketBTN").click(function() {
+		alert( "Are you sure you want to save this? None of the ticket will be processed until you finalize and submit. " );
+	});
+
+	var nowTemp = new Date();
 	var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
 	var checkin = $('#dpd1').fdatepicker({
 		onRender: function (date) {
@@ -15,5 +19,11 @@ $( document ).ready(function() {
 	}
 	checkin.hide();
   });
-	
+
 });
+
+
+	
+
+
+
