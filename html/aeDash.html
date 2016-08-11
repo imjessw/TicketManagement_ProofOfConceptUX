@@ -58,12 +58,21 @@
 
 		<h1 class="large-12 text-center">Account Executive Dashboard</h1>
 		<div class="row">
-			<ul class="large-12 dropdown menu" data-dropdown-menu>
+			<ul class=" dropdown menu" data-dropdown-menu>
 				<li class="float-right">
-				<a href="#">Market Tickets</a>
+				<a href="#">Market DashView</a>
 					<ul class="menu">
-					<li><a href="#">My Tickets</a></li>
+					<li><a href="#">My Tickets View</a></li>
 					<li><a href="#">All Tickets</a></li>
+				</ul>
+				</li>
+			</ul>
+			<ul class=" dropdown menu" data-dropdown-menu>
+				<li class="float-right">
+				<a href="#">Market</a>
+					<ul class="menu">
+					<li><a href="#">NYC</a></li>
+					<li><a href="#">Abiline</a></li>
 				</ul>
 				</li>
 			</ul>
@@ -312,41 +321,46 @@
 				<table>
 					<thead>
 						<tr>
-						  <th width="200">Ticket Number</th>
-						  <th width="100">Client Name</th>
-						  <th width="300">Type of Ad</th>
-						  <th width="150">Marketron Number</th>
-						  <th width="150">AE Email</th>
+							<th width="150">Date Started</th>
+							<th width="200">Ticket Number</th>
+							<th width="100">Client Name</th>
+							<th width="300">Type of Ad</th>
+							<th width="150">AE Email</th>
+							<th width="150">Resume Ticket</th>
 						</tr>
 					  </thead>
 					  <tbody>
 						<tr>
+						  <td>02/17/2016</td>
 						  <td>92654</td>
 						  <td>Google</td>
-						  <td>Listen Live 2.0, Adopt-A-Jock, </td>
-						  <td>123456</td>
+						  <td>Listen Live 2.0, Adopt-A-Jock </td>
 						  <td>Jane.Doe@email.com</td>
+						  <td><a class="button" href="">Resume Ticket</a></td>
 						</tr>
 						<tr>
+						  <td>02/17/2016</td>
 						  <td>92654</td>
 						  <td>Google</td>
 						  <td>Listen Live 2.0, Adopt-A-Jock</td>
-						  <td>123456</td>
 						  <td>Jane.Doe@email.com</td>
+						  <td><a class="button" href="">Resume Ticket</a></td>
 						</tr>
 						<tr>
+						  <td>02/17/2016</td>
+						  <td>92654</td>
+						  <td>Google</td>
+						  <td>Listen Live 2.0, Adopt-A-Jock</td>						  
+						  <td>Jane.Doe@email.com</td>
+						  <td><a class="button" href="">Resume Ticket</a></td>
+						</tr>
+						<tr>
+						  <td>02/17/2016</td>
 						  <td>92654</td>
 						  <td>Google</td>
 						  <td>Listen Live 2.0, Adopt-A-Jock</td>
-						  <td>123456</td>
 						  <td>Jane.Doe@email.com</td>
-						</tr>
-						<tr>
-						  <td>92654</td>
-						  <td>Google</td>
-						  <td>Listen Live 2.0, Adopt-A-Jock</td>
-						  <td>123456</td>
-						  <td>Jane.Doe@email.com</td>
+						  <td><a class="button" href="">Resume Ticket</a></td>
 						</tr>
 					  </tbody>
 					</table>
@@ -361,7 +375,7 @@
 					<div class="dropdown-pane large-5" id="example-dropdown" data-dropdown>
 					  <h3>Design Notes</h3>
 					  <ul>
-					  	<li>There will be close to 22 types of ads on this page that will all have check box's under 'what ad would you like to create'</li>
+						<li>There will be close to 22 types of ads on this page that will all have check box's under 'what ad would you like to create'</li>
 					  </ul>
 					</div>
 					<button class="button large-3" type="button" data-toggle="example-dropdown2"> General Notes</button>
@@ -374,16 +388,16 @@
 					  <h3>Dev Notes</h3>
 					  <h6>Required fields</h6>
 					  <ul>
-					  	<li>Market</li>
-					  	<li>AE Email</li>
-					  	<li>Advertiser</li>
-					  	<li>Is this part of a larger buy?</li>
+						<li>Market</li>
+						<li>AE Email</li>
+						<li>Advertiser</li>
+						<li>Is this part of a larger buy?</li>
 					  </ul>
 					  <h6>Prepopulated Fields</h6>
 					  <ul>
-					  	<li>Market - should be current user's market but editable.</li>
-					  	<li>AE Email- Should populate with the current logged in user but remain editable. Note we will still want to have user tracking on the person logged in even if they are using another AE email.</li>
-					  	
+						<li>Market - should be current user's market but editable.</li>
+						<li>AE Email- Should populate with the current logged in user but remain editable. Note we will still want to have user tracking on the person logged in even if they are using another AE email.</li>
+						
 					  </ul>
 					</div>
 				</div>
