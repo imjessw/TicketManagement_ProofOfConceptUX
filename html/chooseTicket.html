@@ -57,15 +57,51 @@
 
 
 		<div class="columns text-center">
-			<h1>Choose Ticket Type</h1>
+			<h1>Request Type</h1>
 			<div class="button-group ChooseTicket-Group">
-				<a href="ticketAdServices.html" class="button chooseTicket">Ad Services</a>
-				<a class="button chooseTicket">Quickfix & Approval</a>
+				<a href="ticketAdServices.html" class="button chooseTicket">Ad Services & Audience Extension</a>
+				<a class="button chooseTicket">Quick fix & Approval</a>
 				<a class="button chooseTicket">Ignite Local</a>
 				<a class="button chooseTicket">Live Events</a>
 				<a class="button chooseTicket">TSI</a>
 			</div>
 		</div>
+
+			<!-- Dev notes section -->
+
+		<div class="row expanded">
+				<div class="row float-right paddingTop50 large-12">
+					<button class="button large-3" type="button" data-toggle="example-dropdown"> Design Notes</button>
+					<div class="dropdown-pane large-5" id="example-dropdown" data-dropdown>
+					  <h3>Design Notes</h3>
+					  <ul>
+					  	<li>There will be close to 22 types of ads on this page that will all have check box's under 'what ad would you like to create'</li>
+					  </ul>
+					</div>
+					<button class="button large-3" type="button" data-toggle="example-dropdown2"> General Notes</button>
+					<div class="dropdown-pane large-5" id="example-dropdown2" data-dropdown>
+					  <h3>General Notes</h3>
+					  <p>Everything before the toggle forms are required in Creative Services Tickets</p>	 
+					</div>
+					<button class="button large-3" type="button" data-toggle="example-dropdown3"> Dev Notes</button>
+					<div class="dropdown-pane large-5" id="example-dropdown3" data-dropdown>
+					  <h3>Dev Notes</h3>
+					  <h6>Required fields</h6>
+					  <ul>
+					  	<li>Market</li>
+					  	<li>AE Email</li>
+					  	<li>Advertiser</li>
+					  	<li>Is this part of a larger buy?</li>
+					  </ul>
+					  <h6>Prepopulated Fields</h6>
+					  <ul>
+					  	<li>Market - should be current user's market but editable.</li>
+					  	<li>AE Email- Should populate with the current logged in user but remain editable. Note we will still want to have user tracking on the person logged in even if they are using another AE email.</li>
+					  	
+					  </ul>
+					</div>
+				</div>
+			</div>
 
 
 		<script src="../js/vendor/jquery.js"></script>
