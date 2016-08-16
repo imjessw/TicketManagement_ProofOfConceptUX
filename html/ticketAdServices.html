@@ -198,6 +198,9 @@
 									</div>
 									</div>
 								</label>
+								<label class="mTb60"><a href="#" class="flightPop">
+								Add Another Flight <span><i class="fi-plus "></i></span></a>
+								</label>
 								<label>
 									Please add any additional flight dates:
 									<textarea></textarea>
@@ -236,6 +239,56 @@
 							</span>
 							</label>
 							<p class="help-text" id="exampleHelpText">Here's how you use this input field!</p>
+
+							<div class="AddToAllTickets">
+								<label>Station(s)*
+									<input type="text" aria-describedby="exampleHelpText" required>
+									<p class="help-text" id="exampleHelpText">Please use call signs </p>
+								</label>
+								<label>
+									Flight Start Date*
+									<div class="collapse date" id="dpd1" style="max-width:200px;">
+										<div class="small-2 columns">	
+											<span class="prefix"><i class=" fi-calendar size-24"></i></span>
+										</div>
+										<div class="small-10 columns">
+											<input size="16" type="text" readonly>	
+										</div>
+									</div>
+								</label>
+								<label class="mbottom50">
+									Flight End Date*
+									<div class="collapse date" id="dpd1" style="max-width:200px;">
+									<div class="small-2 columns">	
+										<span><i class="fi-calendar size-24"></i></span>
+									</div>
+									<div class="small-10 columns">
+										<input size="16" type="text"  readonly>	
+									</div>
+									</div>
+								</label>
+								<label class="mTb60"><a href="#" class="flightPop">
+								Add Another Flight <span><i class="fi-plus "></i></span></a>
+								</label>
+
+								<label>
+									Any Additonal Traffic Information
+									<textarea></textarea>
+								</label>
+								<label>Please upload your logo</label>
+								<label for="exampleFileUpload" class="button">Upload Logo</label>
+								<input type="file" id="exampleFileUpload" class="show-for-sr">
+
+								<label>Total Revenue*
+									<input type="text" aria-describedby="exampleHelpText" required pattern="number">
+									<p class="help-text" id="exampleHelpText"></p>
+								</label>
+								<label>
+									Any Additonal Creative Information
+									<textarea></textarea>
+								</label>
+								
+							</div>
 						</div>
 					</li>
 
@@ -282,10 +335,7 @@
 								      <!-- Add show hide -->
 								    </select>
 								 </label>
-								<!--  <label>What is the click through URL?*
-									<input type="text" aria-describedby="exampleHelpText" required>
-									<p class="help-text" id="exampleHelpText">Please provide the full URL. </p>
-								</label> -->
+							
 							</div>
 							<hr>
 							<div class="AddToAllTickets">
@@ -315,7 +365,9 @@
 									</div>
 									</div>
 								</label>
-
+								<label class="mTb60"><a href="#" class="flightPop">
+								Add Another Flight <span><i class="fi-plus "></i></span></a>
+								</label>
 								<label>
 									Any Additonal Traffic Information
 									<textarea></textarea>

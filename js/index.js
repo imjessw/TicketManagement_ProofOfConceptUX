@@ -5,6 +5,11 @@ $(function() {
 		alert( "Are you sure you want to save this? None of the ticket will be processed until you finalize and submit. " );
 	});
 
+	// I want to come back and make this add another flight field vs pop up.
+	$(".flightPop").click(function(){
+		alert("this would add another set of flight start date and flight end date.")
+	});
+
 	// $(".saveTicketBTN").click(function () {
 	// 		var msg = 'Confirmation Msg.';
 	// 		var div = $("<div>" + msg + "</div>");
@@ -44,6 +49,7 @@ $(function() {
 	}
 	checkin.hide();
   });
+
 
 });
 
